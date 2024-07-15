@@ -16,6 +16,7 @@ button{
     width: 10%;
     text-indent: 20px;
     cursor: pointer;
+    font-size: 40px;
 }
 .container a .logo{
   color: #EFEFEF;
@@ -32,15 +33,17 @@ button{
     list-style: none;
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 70%;
     font-size: 14px;
     justify-content: space-around;
 }
-.naverbar li a{
-    margin-left: 10px;
+.naverbar  li a{
+    margin-left: 30px;
+    transition: background-color 0.3s ease;
     text-decoration: none;
     color: var(--mantine-color-text_white-0);
 }
+
 .search-container{
   cursor: pointer;
   display: flex;
@@ -392,29 +395,47 @@ div .communicate:hover{
 
 
 
-.private{
+.private ,.communicate-page,.security-page{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.private img{
+.private img {
   width: 800px;
   margin-top: 50px;
 }
-.private h1{
-  font-size: 90px;
-  box-shadow: 0px 0px 40px 2px #EFEFEF;
 
+.private h1 {
+  font-size: 90px;
+  box-shadow: 0px 0px 10px 2px #0ddcb6;
 }
-.private p{
+
+.communicate-page h1{
+  font-size: 90px;
+  box-shadow: 0px 0px 10px 2px #fdd504;
+  color: #EFEFEF;
+}
+.communicate-page img{
+  width: 1200px;
+  margin-top: 50px;
+}
+
+.private p {
   background-image: linear-gradient(#0ddcb6, #00de66);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   margin-top: -30px;
 }
-.private .virtual{
+.communicate-page{
+  background-image: linear-gradient( #90d400, #fdd504);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: -30px;
+}
+.private .virtual ,.communicate-page .virtual{
   width: 1000px;
   margin-top: 100px;
   text-align: center;
@@ -422,6 +443,7 @@ div .communicate:hover{
   line-height: 1.6;
   color: #c3b3de;
 }
+
   .contact-form-container {
   padding: 2rem;
   border-radius: 15px;
