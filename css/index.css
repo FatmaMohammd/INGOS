@@ -10,11 +10,25 @@ body{
     box-sizing: border-box;
     text-decoration: none;
 } 
-* button i{
-  margin-left: 5px;
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
 }
-
-.logo{
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* .logo{
     width: 10%;
     text-indent: 20px;
     cursor: pointer;
@@ -35,7 +49,7 @@ body{
     list-style: none;
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 70%;
     font-size: 14px;
     justify-content: space-around;
 } 
@@ -44,7 +58,7 @@ body{
     transition: background-color 0.3s ease;
     text-decoration: none;
     color: var(--mantine-color-text_white-0);
-}  
+}  */
 
 .search-container{
   cursor: pointer;
@@ -82,16 +96,12 @@ body{
 .page1{
     display: flex;
 }
-.page1 video{
-  width: 40%;
-  margin-left: 5px;
-}
 .video1{
     width: 45%;
 }
 .head{
     width: 50%;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 .head h1{
     font-size: 100px;
@@ -111,16 +121,15 @@ body{
 }
 .page1 button{
   padding: 20px 30px;
-  color: black;
+  color: #EFEFEF;
   border-radius: 25px;
   border: none;
   cursor: pointer;
   font-weight: bold;
   background-image: linear-gradient(to right,#513468, #7808D1);
 }
-
 .page1 button:hover{
-  color:#EFEFEF;
+  color: black;
   box-shadow: 1px 1px 30px 10px #efefef8e inset;
 }
 .page2{
@@ -150,7 +159,6 @@ body{
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
-  color: black;
 }
 .page2 button:hover{
   color: white;
@@ -195,11 +203,6 @@ body{
   border: none;
   border-radius: 40px;
   margin: 20px;
-  color: black;
-  font-weight: bold;
-}
-.page4 button i{
-  margin-left: 6px;
 }
 div .security{
   background-image: linear-gradient(to right, #dc2323ba, #eb4683d0 );
@@ -249,17 +252,12 @@ div .communicate:hover{
   border: none;
   cursor: pointer;
   font-weight: bold;
-  background-image: linear-gradient(to right, #7808D1 70%,#513468);
+  background-image: linear-gradient(to right,#513468, #7808D1);
   margin-top: 20px;
   text-transform: uppercase;
-  color: black;
 }
-.page5 .content button i{
-  margin-left: 3px;
-}
-
 .page5 .content button:hover{
-  color:#EFEFEF;
+  color: #EFEFEF;
   box-shadow: 1px 1px 30px 10px #efefef8e inset;
 }
 .page6{
@@ -309,18 +307,16 @@ div .communicate:hover{
 }
 .learn button:hover{
   border-color: white;
-
 }
 .page7{
   display: flex;
   margin-top: 100px;
   align-content: center;
   justify-content: center;
-
 }
 .page7 section{
   width: 25%;
-  height: 380px;
+  height: 350px;
   box-shadow: 0.1px 0.1px 10px 1px #59258489 inset;
   padding: 20px;
   border-radius: 30px;
@@ -330,14 +326,6 @@ div .communicate:hover{
   color: #C3B3DE;
   line-height: 1.8;
 }
-.page7 section i{
-  color: #efefef80;
-  font-size: 30px;
-  margin-bottom: 40px;
-}
-.page7 section h1{
-  font-size: 30px;
-}
 .page8{
   display: flex;
   margin-top: 200px;
@@ -346,6 +334,7 @@ div .communicate:hover{
 .page8 h1{
   font-size: 60px;
   position: relative;
+  
 }
 
 .page8 .costum{
@@ -357,14 +346,14 @@ div .communicate:hover{
   position: absolute;
   bottom: 50px;
   left: 80px;
-
+  margin: 10px;
 }
 .page8 .costum .direction .left{
   background-color: #090a10;
   color: #C3B3DE;
   border:1px solid #a183ba;
   cursor: pointer;
-  padding: 20px 30px;
+  padding: 10px 20px;
   border-radius: 30px;
   box-shadow: 1px 1px 10px 2px #7808D1 ;
 }
@@ -380,10 +369,10 @@ div .communicate:hover{
   color: #C3B3DE;
   border:1px solid #a183ba;
   cursor: pointer;
-  padding: 20px 30px;
+  padding: 10px 20px;
   border-radius: 30px;
   box-shadow: 1px 1px 10px 2px #7808D1 ;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .page8 h1::after{
@@ -409,35 +398,13 @@ div .communicate:hover{
   margin-top: 20px;
   box-shadow: 0.1px 0.1px 10px 1px #59258489 inset;
   margin-right: 10px;
-}
-.page8 .card2 div{
-  position: absolute;
-  bottom: 150px;
-  left: 30px;
-}
-.page8 .card2 i{
-  position: absolute;
-  left: 50px;
-  top: 70px;
-  font-size: 40px;
+  
 }
 .page8 .card2 p{
   color: #C3B3DE;
   position: absolute;
   padding: 20px;
   bottom: 100px;
-}
-.page8 .card2 div p{
-  color: #C3B3DE;
-  position: absolute;
-  padding: 20px;
-  bottom: -150px;
-  font-size: 10px;
-  left: 100px;
-  width: 200px;
-}
-.page8 .card2 i{
-  color:#efefefcc;
 }
 
 
@@ -501,24 +468,23 @@ div .communicate:hover{
 .page9{
     background-color:#090a10;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     margin: 0;
-    
 }
 .contact-form-container{
-  width: 600px;
+  width: 500px;
   box-shadow: 1px 1px 20px 5px #7808D1 inset;
   text-align: center;
   margin-left: 450px;
   border-radius: 40px;
   margin-top: 100px;
-  height: 700px;
-  position: relative;
 }
 form {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 .form-toggle {
   display: flex;
@@ -567,6 +533,7 @@ input {
 }
 
 button {
+  background-color: #6200ea;
   border: none;
   padding: 0.75rem;
   border-radius: 5px;
@@ -574,91 +541,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-form .help{
-  margin-top: 20px;
-}
-div .help button{
-  color: black;
-  background-image: linear-gradient(90deg, #8d8d8d, #585858);
-  margin-top: 50px;
-  padding: 20px 40px ;
-  border-radius: 20px;
-}
-.page10{
-  margin-top: 100px;
-  margin-bottom: 50PX;
-}
-.page10 p{
-  color: #a183ba;
-  text-align: center;
-  font-size: 15px;
-}
-.page10 div{
-  display: flex;
-  width: 80%;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  margin-left: 200px;
-  margin-top: 50px;
-}
-.page10 div span{
-  width: 20%;
-  font-size: 20px;
-  margin: 10px;
-  font-weight: bold;
-}
-.before-footer{
-  border: 0.1px solid #a183ba16;
-  border-radius: 50%;
-  box-shadow: 1px 1px 40px 20px #a183ba23;
-  margin-top: 30px;
-  margin-bottom: 100px;
-}
-footer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 100px auto;
-  position: relative;
-}
-.parent1{
-  margin-left: 150px;
-}
-.parent1 h1{
-  margin-bottom: 150px;
-}
-.parent1 p{
-  line-height: 1;
-  font-size: 10px;
-  color: #c3b3de;
-}
-.parent2 a , .parent3 a{
-  display: grid;
-  margin: 10px;
-  font-size: 10px;
-}
-div .icons{
-  margin-left: 150px;
-  margin-top: -50px;
-}
-div .icons i{
-  margin: 10px;
-}
-.icons span{
-  border: 1px solid #433A55;
-}
-.end{
-  display: flex;
-}
-.end .line{
-  border-bottom: 1px solid #433A55;
-  width: 1000px;
-  position: absolute;
-  left: 270px;
-}
 
-
-
-
-
-
+button:hover {
+  background-color: #3700b3;
+}

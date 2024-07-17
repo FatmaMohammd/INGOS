@@ -1,10 +1,11 @@
 <!DOCTYPE html>
   <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INGOS</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <header class="container">
@@ -25,7 +26,9 @@
       </div>
     </header>
     <div class="page1">
-      <img src="img&video/ingos.png" alt="">
+      <video width="" autoplay loop muted >
+        <source  src="img&video/video.mp4" type="">
+      </video>
       <section class="head">
         <article>
           <h1>BUILD YOUR</h1>
@@ -35,14 +38,19 @@
         <article>
           <p>Take your business to the next level with ©INGOS Cloud Technology. <br> Fast and secure solutions for modern companies.</p>
         </article>
-        <button>GET A QUOTE</button>
+        <a href="#forms">
+          <button>GET A QUOTE <i class="fa-solid fa-arrow-right-long"></i></button>
+        </a>
       </section>
+    </div>
+    <div class="move-line">
+      <div class="line"></div>
     </div>
     <div class="page2">
       <h1>EMPOWER AND</h1>
       <p>YOUR BUSINESS WITH INGOS CLOUD TECHNOLOGY.</p>
       <a href="private-cloud.html">
-        <button >explore</button>
+        <button >explore <i class="fa-solid fa-arrow-right-long"></i></button>
       </a>
     </div>
     <div class="page3">
@@ -56,10 +64,10 @@
       <p>ADDITIONAL PROTECTION ALONGSIDE SECURED COMMUNICATION FEATURES</p>
       <div class="">
         <a href="securty-add.html">
-          <button class="security">security add-ons</button>
+          <button class="security">security add-ons <i class="fa-solid fa-arrow-right-long"></i></button>
         </a>
         <a href="COMMUNICATE.html">
-          <button class="communicate">communication</button>
+          <button class="communicate">communication <i class="fa-solid fa-arrow-right-long"></i></button>
         </a>
       </div>
       <div class="video">
@@ -72,7 +80,9 @@
       <div class="content">
         <h1>not sure what you need?</h1>
         <p>try our cloud demo with</p>
-        <button>try demo</button>
+        <a href="#forms">
+          <button>try demo <i class="fa-solid fa-arrow-right-long"></i></button>
+        </a>
       </div>
     </div>
     <div class="page6">
@@ -92,22 +102,28 @@
             area when it comes to develop a cyber security 
             strategy and implement all of our services that 
             meet your individual requirements.</p>
-          <button>learn more</button>
+          <a href="about-us.html">  
+            <button>learn more <i class="fa-solid fa-arrow-right-long"></i></button>
+          </a>
         </div>
 
       </section>
     </div>
     <div class="page7">
       <section>
+        <i class="fa-solid fa-user"></i>
         <h1>PERSONALIZED</h1>
         <p>Tailored to your needs, our services emphasize quick, personalized solutions and continuous support, fostering a trust-based relationship.</p>
       </section>
       <section>
+        <i class="fa-solid fa-up-right-from-square"></i>
         <h1>QUICK & SCALABLE</h1>
         <p>INGOS Private Cloud offers fast data processing and efficient, scalable resources. Easily adjust to changing demands with minimal investment and time delay for ultimate flexibility.</p>
       </section>
       </section>
       <section>
+        <i class="fa-solid fa-shield"></i>
+
         <h1>SECURE & GATED</h1>
         <p>We don't let everybody in. Our Private Cloud is for oganizations which share our commitment to cyber security and are willing to invest in their cyber security strategy. This setup minimizes exposure to external threats. </p>
       </section>
@@ -116,15 +132,37 @@
       <section class="costum">
         <h1>CUSTOMER</h1>
         <div class="direction">
-          <button class="left">__</button>
-          <button class="right">__</button>
+          <button class="right"><i class="fa-solid fa-arrow-left-long"></i></button>
+          <button class="left"><i class="fa-solid fa-arrow-right-long"></i></button>
+
         </div>
       </section>
       <section class="card2">
-        <p>EINFACH TOP - HERR SCHULZ BETREUT UNS SCHON SEIT WEIT ÜBER 10 JAHREN. FREUNDLICHE UND GEDULDIGE REAKTION AUF ANFRAGEN BIS HIN ZU INSTALLATION UND SERVICE.... VIELEN DANK!... PRODUKTE DIE WIR NUTZEN: CLOUD SERVER , CLOUD PBX ( TELEFONANLAGE ) , CLOUD BACKUP , EMAIL, WEBHOSTING.</p>   
+        <i class="fa-solid fa-quote-right"></i>
+        <p>EINFACH TOP - HERR SCHULZ BETREUT UNS SCHON SEIT WEIT ÜBER 10 JAHREN. FREUNDLICHE UND GEDULDIGE REAKTION AUF ANFRAGEN BIS HIN ZU INSTALLATION UND SERVICE.... VIELEN DANK!... PRODUKTE DIE WIR NUTZEN: CLOUD SERVER , CLOUD PBX ( TELEFONANLAGE ) , CLOUD BACKUP , EMAIL, WEBHOSTING.</p>
+        <div>
+          <i class="fa-regular fa-user"></i>
+          <p class="user">c.n <br>Geschäftsführer, IT Branche</p>
+        </div>   
       </section>
     </div>
-    <div class="page9">
+    <div class="page10">
+      <p>POWERED BY THE WORLD’S BEST SUPPLIERS</p>
+      <div>
+        <span>INTERCONNECTRON</span>
+        <span><i class="fa-brands fa-microsoft"></i> microsoft</span>
+        <span>NVIDIA</span>
+        <span>ACRONES</span>
+        <span>SCHUTZSCHLD</span>
+      </div>
+      <div class="IV">
+        <span>INTEL</span>
+        <span>vmware</span>
+        <span>AMD
+        </span>
+      </div>
+    </div>
+    <div class="page9" id="forms">
         <div class="contact-form-container">
         <h1>CONTACT US</h1>
         <p>AND TAKE YOUR BUSINESS TO THE NEXT LEVEL</p>
@@ -147,35 +185,59 @@
             </div>
             <div class="form-group">
                 <input type="text" id="country" name="country" placeholder="Country" required>
+
             </div>
-            <button type="submit">Submit</button>
+            <div class="options">
+              <input type="text" id="country" name="country" placeholder="Company Size" required>
+            </div >
+            <div class="help">
+              <input type="text" id="country" name="country" placeholder="How Can I Help you?" required >
+              <button type="">SEND MASSAGE <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            
         </form>
       </div>
     </div>
-    <!-- <div class="page9">
-      <h1>CONTACT US</h1>
-      <p>AND TAKE YOUR BUSINESS TO THE NEXT LEVEL</p>
-      <div class="choose">
-        <input type="radio" value="Get in touch" name="check" class="get">
-        <label>Get in touch</label>
-        <input type="radio" value="Request a demo" name="check" class="demo">
-        <label >Request a demo</label>
+    <div class="before-footer"></div>
+    <footer>
+      <div class="parent1">
+        <h1>INGOS</h1>
+        <p>INGOS GmbH</p>
+        <p>Mimminger Str. 37B</p>
+        <p>94491 Hengersberg</p>
+        <p>Deutschland</p>
       </div>
-      <input type="text" required placeholder="full name">
-      <input type="email" required placeholder="email">
-      <div> 
-        د<input type="number">
-        <input type="number" required placeholder="phone number">
+      <div class="parent2">
+        <div>
+          <h6>COMPANY</h6>
+          <a href="">ABOUT US</a>
+          <a href="">CAREERS</a>
+          <a href="">SUCCESS STORIES</a>
+        </div>
+        <div>
+          <h6>SUPPORT</h6>
+          <a href="">GET HELP</a>
+          <a href="">ACADEMY</a>
+        </div>
       </div>
-      <input type="text" required placeholder="countary">
-      <input type="text"required placeholder="company name">
-      <input type="text"required placeholder="company size">
-      <input type="text" required placeholder="how can i help you">
-      <input type="radio">
-      <label for="">I agree to my personal information being used by INGOS GmbH to get in touch </label>
-      <input type="radio">
-      <label for="">I’m familiar with the Privacy Policy </label> 
-    </div> -->
+      <div class="parent3">
+        <h6>SECURITY ADD-ONS</h6>
+        <a href="">AD MANAGER</a>
+        <a href="">ANTIVIRUS</a>
+        <a href="">MANAGED FIREWALL</a>
+        <a href="">MONITORING</a>
+        <a href="">WEB APPLICATION FIREWALL</a>
+      </div>
+    </footer>
+    <div class="end">
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <span></span>
+      </div>
+      <div class="line"></div>
+    </div>
   </body>
 </html>
 
